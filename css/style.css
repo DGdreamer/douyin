@@ -1,0 +1,39 @@
+body{
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: 100%;
+
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 200px 0 0 520px;
+    position: relative;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+img {
+    display: inline-block;
+}
+
+ol, ul {
+    list-style: none outside none;
+}
+
+.show_images_list_li {
+    position: absolute;
+    cursor: pointer;
+    vertical-align: bottom;
+    display: block;
+}
+
+.show_images_list_li img {
+    width: 527px;
+    height: 310px;
+}
+.show_images_list_li:first-child img {
+    width: 599px;
+    height: 353px;
+}

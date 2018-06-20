@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="陈一发儿"/>
+    <meta name="keywords" content="陈一发儿"/>
+    <meta name="author" content="Gdreamer"/>
+    <title>陈一发儿</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<audio src="mp3/陈一发儿%20-%20童话镇.mp3" autoplay></audio>
+<div id="wrapper">
+    <div id="maincontent">
+        <div id="huadong">
+            <ul class="show_images_list">
+                <li class="show_images_list_li show_images_1" style="z-index: 15; top: 1px; left: 200px;">
+                    <a href="#" target="_blank">
+                        <img  class="show_images_1_img heart" src="img/1.png">
+                    </a>
+                </li>
+                <li class="show_images_list_li show_images_2" style="z-index: 10; top: 20px; left: 0px;">
+                    <a href="#" target="_blank">
+                        <img class="show_images_2_img" src="img/2.png">
+                    </a>
+                </li>
+                <li class="show_images_list_li show_images_3" style="z-index: 5; top: 20px; left: 459px;">
+                    <a href="#" target="_blank">
+                        <img class="show_images_3_img" src="img/3.png">
+                    </a>
+                </li>
+                <li class="show_images_list_li show_images_4" style="z-index: 0; top: 20px; left: 200px;">
+                    <a href="#" target="_blank">
+                        <img class="show_images_4_img" src="img/4.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/gallery.js"></script>
+<script>
+    $(function() {
+        $().gallery({
+            current: [".show_images_1",".show_images_1_img"],
+            left: [".show_images_2",".show_images_2_img"],
+            right: [".show_images_3",".show_images_3_img"],
+            none: [".show_images_4",".show_images_4_img"],
+            duration: 500,
+            start: function() {
+                $(".header_text").fadeOut(150);
+            },
+            end: function() {
+                $(".header_text").fadeIn(150);
+            },
+            autoChange : true,
+            changeTimeout: 3000,
+            stopTarget : ".header_stage"
+        });
+    });
+
+</script>
+</html>
